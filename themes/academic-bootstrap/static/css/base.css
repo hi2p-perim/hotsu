@@ -22,7 +22,7 @@ body {
 }*/
 
 #profile .portrait {
-  background-image: url('img/portrait.jpg');
+  background-image: url('../img/portrait.jpg');
   width: 250px;
   height: 250px;
   margin: 20px auto;
