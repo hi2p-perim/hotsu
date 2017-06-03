@@ -1,0 +1,13 @@
+baseurl     = "http://lightmetrica.org/h-otsu"
+title       = "Hisanari Otsu"
+copyright   = "&copy; 2016 Hisanari Otsu"
+theme       = "academic-bootstrap"
+
+[params]
+  name             = "Hisanari Otsu"
+  role             = "PhD Student"
+  organization     = "Dept. of Creative Informatics, The University of Tokyo"
+  organization_url = "http://www.ci.i.u-tokyo.ac.jp/site/index.php"
+  avatar           = "portrait.jpg"
+  email            = "hotsu@graphics.ci.i.u-tokyo.ac.jp"
+  address          = "IREF bldg., 1-1-1 Yayoi, Bunkyo-ku, Tokyo, Japan"

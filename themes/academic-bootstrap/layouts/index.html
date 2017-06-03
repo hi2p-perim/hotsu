@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic-bootstrap">
+
+  <meta name="description" content="Personal site of {{ $.Site.Params.name }}">
+  <meta name="author" content="{{ $.Site.Params.name }}">
+
+  <title>{{ .Site.Title }}</title>
+
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/css/base.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="{{ "/" | relLangURL }}">{{ .Site.Title }}</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main container -->
+  <div class="container">
+    <!-- Profile -->
+    <div id="profile" class="row">
+      <div class="col-md-4">
+    	  <div class="portrait"></div>
+      </div>
+      <div class="col-md-8">
+        <h2 class="portrait-title">{{ $.Site.Params.name }}</h2>
+        <ul class="fa-ul">
+	      	<li><i class="fa-li fa fa-user"></i>{{ $.Site.Params.role }}</li>
+	      	<li><i class="fa-li fa fa-university"></i><a href="{{ $.Site.Params.organization_url }}" target="_blank">{{ $.Site.Params.organization }}</a></li>
+	      	<li><i class="fa-li fa fa-map-marker"></i>{{ $.Site.Params.address }}</li>
+	      	<li><i class="fa-li fa fa-envelope"></i>{{ $.Site.Params.email }}</li>
+<!-- 	      	<li><i class="fa-li fa fa-file"></i>CV</li> -->
+	      </ul>
+	    	{{ range first 1 (where $.Data.Pages "File.BaseFileName" "bio") }}
+	    	{{ .Content }}
+	    	{{ end }}
+      </div>
+    </div>
+
+    <!-- News -->
+    <div id="news" class="row">
+    	<div class="col-md-12">
+	    	<h2>News</h2>
+	    	{{ range first 1 (where $.Data.Pages "File.BaseFileName" "news") }}
+	    	{{ .Content }}
+	    	{{ end }}
+    	</div>
+    </div>
+
+    <!-- Publications -->
+    <div id="publications" class="row">
+    	<div class="col-md-12">
+	    	<h2>Publications</h2>
+	    	<ul class="media-list">
+	    		{{ range $index, $page := where .Data.Pages "Type" "publication" }}
+	    			<li class="media">
+			    		<div class="media-left media-middle">
+			    			<img class="project-representative-image media-object img-rounded" src="img/{{ $page.File.BaseFileName }}/icon.jpg">
+			    		</div>
+			    		<div class="media-body media-middle">
+			    			<h4>{{ $page.Title }}</h4>
+			    			<p>
+			    				{{ with .Params.authors }}
+					        {{ delimit . ", " | markdownify }}
+					        {{ end }}
+			    			</p>
+			    			<p>{{ .Params.publication_short | markdownify }}</p>
+			    			<p>
+			    				<a href="{{ .Params.url_doi }}" target="_blank">[DOI]</a>
+			    				<a href="{{ .Params.url_pdf | relURL }}" target="_blank">[PDF]</a>
+			    				{{ with .Params.url_project }}
+			    				<a href="{{ . | relURL }}" target="_blank">[Project]</a>
+			    				{{ end }}
+			    			</p>
+			    		</div>
+	    			</li>
+	    		{{ end }}
+	    	</ul>
+	    </div>
+    </div>
+
+    <!-- Thesis -->
+    <div id="thesis" class="row">
+    	<div class="col-md-12">
+	    	<h2>Thesis</h2>
+	    	{{ range first 1 (where $.Data.Pages "File.BaseFileName" "thesis") }}
+	    	{{ .Content }}
+	    	{{ end }}
+    	</div>
+    </div>
+
+    <!-- Awards -->
+    <div id="news" class="row">
+    	<div class="col-md-12">
+	    	<h2>Awards</h2>
+	    	{{ range first 1 (where $.Data.Pages "File.BaseFileName" "awards") }}
+	    	{{ .Content }}
+	    	{{ end }}
+    	</div>
+    </div>
+
+    <!-- Personal project -->
+    <div id="personal-projects" class="row">
+    	<div class="col-md-12">
+	    	<h2>Personal Projects</h2>
+	    	{{ range first 1 (where $.Data.Pages "File.BaseFileName" "personal_projects") }}
+	    	{{ .Content }}
+	    	{{ end }}
+    	</div>
+    </div>
+
+  </div>
+</body>
+</html>
+

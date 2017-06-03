@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic-bootstrap">
+
+  <meta name="description" content="Project site of {{ .Title }}">
+  <meta name="author" content="{{ $.Site.Params.name }}">
+
+  <title>{{ .Title }}</title>
+
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/css/base.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div id="project_title" class="row">
+      <div class="col-md-12">
+        <h2>{{ .Title }}</h2>
+        <ul class="list-inline">
+          {{ $author_pages := where $.Site.Pages "Type" "author" }}
+          {{ range $author := .Params.authors }}
+          {{ range first 1 (where $author_pages "File.BaseFileName" $author) }}
+          <li><a href="{{ .Params.personal_url }}" target="_blank">{{ .Params.name }}</a></li>
+          {{ end }}
+          {{ end }}
+        </ul>
+        <p>{{ .Params.publication_short | markdownify }}</p>
+      </div>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="col-md-12">
+          <img class="img-responsive" src="{{ "/img/" | relURL }}{{ .File.BaseFileName }}/representative.jpg">
+      </div>
+    </div>
+    <hr />
+
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Abstract</h2>
+        <p>{{ .Params.abstract }}</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Download</h2>
+        <ul>
+          <li>Paper <a href="{{ .Params.url_pdf | relURL }}" target="_blank">[PDF, {{ .Params.pdf_filesize }}]</a></li>
+          <li>Code {{ if .Params.code_is_coming_soon }}(coming soon){{ else }}<a href="{{ .Params.url_code }}">[Github]</a>{{ end }}</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Publication</h2>
+        <p>{{ .Params.publication | markdownify }} <a href="{{ .Params.url_doi }}" target="_blank">[DOI]</a></p>
+        <pre>{{ .Params.bibtex }}</pre>
+      </div>
+    </div>
+  </div>
+</body>
