@@ -83,8 +83,12 @@
 			    			</p>
 			    			<p>{{ .Params.publication_short | markdownify }}</p>
 			    			<p>
-			    				<a href="{{ .Params.url_doi }}" target="_blank">[DOI]</a>
-			    				<a href="{{ .Params.url_pdf | relURL }}" target="_blank">[PDF]</a>
+                  {{ with .Params.url_doi }}
+			    				<a href="{{ . }}" target="_blank">[DOI]</a>
+                  {{ end }}
+                  {{ with .Params.url_pdf }}
+			    				<a href="{{ . | relURL }}" target="_blank">[PDF]</a>
+                  {{ end }}
 			    				{{ with .Params.url_project }}
 			    				<a href="{{ . | relURL }}" target="_blank">[Project]</a>
 			    				{{ end }}
