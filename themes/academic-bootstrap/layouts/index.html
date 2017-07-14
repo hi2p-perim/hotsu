@@ -72,7 +72,7 @@
 	    		{{ range $index, $page := where .Data.Pages "Type" "publication" }}
 	    			<li class="media">
 			    		<div class="media-left media-middle">
-			    			<img class="project-representative-image media-object img-rounded" src="img/{{ $page.File.BaseFileName }}/icon.jpg">
+			    			<img class="project-representative-image media-object img-rounded" src="{{ "/img/" | relURL }}{{ $page.File.BaseFileName }}/icon.jpg">
 			    		</div>
 			    		<div class="media-body media-middle">
 			    			<h4>{{ $page.Title }}</h4>
