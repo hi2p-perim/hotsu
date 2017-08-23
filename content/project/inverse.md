@@ -6,6 +6,8 @@ url_doi = "https://doi.org/0.1145/3072959.3073691"
 url_pdf = "/download/inverse.pdf"
 pdf_filesize = "29.2 MB"
 url_code = "https://github.com/hi2p-perim/lightmetrica-v2/tree/master/plugin/renderer_inversemap"
+url_pptx = "/download/inverse.pptx"
+pptx_filesize = "87.8 MB"
 code_is_coming_soon = false
 
 abstract = "Rendering algorithms using Markov chain Monte Carlo (MCMC) currently build upon two different state spaces. One of them is the path space, where the algorithms operate on the vertices of actual transport paths. The other state space is the primary sample space, where the algorithms operate on sequences of numbers used for generating transport paths. While the two state spaces are related by the sampling procedure of transport paths, all existing MCMC rendering algorithms are designed to work within only one of the state spaces. We propose a first framework which provides a comprehensive connection between the path space and the primary sample space. Using this framework, we can use mutation strategies designed for one space with mutation strategies in the respective other space. As a practical example, we take a combination of manifold exploration and multiplexed Metropolis light transport using our framework. Our results show that the simultaneous use of the two state spaces improves the robustness of MCMC rendering. By combining efficient local exploration in the path space with global jumps in primary sample space, our method achieves more uniform convergence as compared to using only one space."
