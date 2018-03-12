@@ -42,10 +42,18 @@
       <div class="col-md-8">
         <h2 class="portrait-title">{{ $.Site.Params.name }}</h2>
         <ul class="fa-ul">
-	      	<li><i class="fa-li fa fa-user"></i>{{ $.Site.Params.role }}</li>
-	      	<li><i class="fa-li fa fa-university"></i><a href="{{ $.Site.Params.organization_url }}" target="_blank">{{ $.Site.Params.organization }}</a></li>
-	      	<li><i class="fa-li fa fa-map-marker"></i>{{ $.Site.Params.address }}</li>
-	      	<li><i class="fa-li fa fa-envelope"></i>{{ $.Site.Params.email }}</li>
+          <li><i class="fa-li fa fa-user"></i>{{ $.Site.Params.role }}</li>
+          <li><i class="fa-li fa fa-university"></i><a href="{{ $.Site.Params.organization_url }}" target="_blank">{{ $.Site.Params.organization }}</a></li>
+          <li><i class="fa-li fa fa-map-marker"></i>{{ $.Site.Params.address }}</li>
+          <li><i class="fa-li fa fa-envelope"></i>{{ $.Site.Params.email }}</li>
+          {{ if $.Site.Params.role_2 }}
+          <br />
+          <li><i class="fa-li fa fa-user"></i>{{ $.Site.Params.role_2 }}</li>
+          <li><i class="fa-li fa fa-university"></i><a href="{{ $.Site.Params.organization_url_2 }}" target="_blank">{{ $.Site.Params.organization_2 }}</a></li>
+          <li><i class="fa-li fa fa-map-marker"></i>{{ $.Site.Params.address_2 }}</li>
+          <li><i class="fa-li fa fa-envelope"></i>{{ $.Site.Params.email_2 }}</li>
+          {{ end }}
+
 <!-- 	      	<li><i class="fa-li fa fa-file"></i>CV</li> -->
 	      </ul>
 	    	{{ range first 1 (where $.Data.Pages "File.BaseFileName" "bio") }}
