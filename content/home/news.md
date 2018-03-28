@@ -3,6 +3,9 @@
 
 {{< fa_ul >}}
 {{< fa_li >}}
+**Mar. 2018**: I have received a Ph.D. degree from The University of Tokyo!
+{{< /fa_li >}}
+{{< fa_li >}}
 **Feb. 2018**: I have a paper accepted to Computer Graphics Forum!
 {{< /fa_li >}}
 {{< fa_li >}}
