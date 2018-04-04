@@ -51,7 +51,9 @@
         <h2>Download</h2>
         <ul>
           <li>Paper <a href="{{ .Params.url_pdf | relURL }}" target="_blank">[PDF, {{ .Params.pdf_filesize }}]</a></li>
+          {{ if .Params.url_pptx }}
           <li>Slide <a href="{{ .Params.url_pptx | relURL }}" target="_blank">[PowerPoint, {{ .Params.pptx_filesize }}]</a></li>
+          {{ end }}
           <li>Code {{ if .Params.code_is_coming_soon }}(coming soon){{ else }}<a href="{{ .Params.url_code }}">[Github]</a>{{ end }}</li>
         </ul>
       </div>
@@ -61,7 +63,9 @@
       <div class="col-md-12">
         <h2>Publication</h2>
         <p>{{ .Params.publication | markdownify }} <a href="{{ .Params.url_doi }}" target="_blank">[DOI]</a></p>
+        {{ if .Params.bibtex }}
         <pre>{{ .Params.bibtex }}</pre>
+        {{ end }}
       </div>
     </div>
   </div>
