@@ -3,6 +3,9 @@
 
 {{< fa_ul >}}
 {{< fa_li >}}
+**Aug. 2018**: I have a paper conditionally accepted to SIGGRAPH Asia 2018!
+{{< /fa_li >}}
+{{< fa_li >}}
 **Mar. 2018**: I have received a Ph.D. degree from The University of Tokyo!
 {{< /fa_li >}}
 {{< fa_li >}}
