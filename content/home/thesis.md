@@ -3,7 +3,7 @@
 
 {{< fa_ul >}}
 {{< fa_li >}}
-**Hisanari Otsu**. Bridging Different Spaces in Light Transport Simulations. *Ph.D. Thesis*, The University of Tokyo. 2018.
+**Hisanari Otsu**. Bridging Different Spaces in Light Transport Simulations. *Ph.D. Thesis*, The University of Tokyo. 2018. [[PDF]](download/phd_thesis.pdf)
 {{< /fa_li >}}
 {{< fa_li >}}
 **Hisanari Otsu**. Optimized Path Sampling Strategy Selection for Trans-Dimensional Mutation in Metropolis Light Transport. *Master's Thesis*, The University of Tokyo. 2015.
