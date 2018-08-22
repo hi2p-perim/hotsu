@@ -24,7 +24,13 @@
           {{ $author_pages := where $.Site.Pages "Type" "author" }}
           {{ range $author := .Params.authors }}
           {{ range first 1 (where $author_pages "File.BaseFileName" $author) }}
-          <li><a href="{{ .Params.personal_url }}" target="_blank">{{ .Params.name }}</a></li>
+          <li>
+            {{ if .Params.personal_url }}
+            <a href="{{ .Params.personal_url }}" target="_blank">{{ .Params.name }}</a>
+            {{ else }}
+            {{ .Params.name }}
+            {{ end }}
+          </li>
           {{ end }}
           {{ end }}
         </ul>
@@ -54,7 +60,9 @@
           {{ if .Params.url_pptx }}
           <li>Slide <a href="{{ .Params.url_pptx | relURL }}" target="_blank">[PowerPoint, {{ .Params.pptx_filesize }}]</a></li>
           {{ end }}
+          {{ if not .Params.code_is_not_available }}
           <li>Code {{ if .Params.code_is_coming_soon }}(coming soon){{ else }}<a href="{{ .Params.url_code | relURL }}">[Code]</a>{{ end }}</li>
+          {{ end }}
         </ul>
       </div>
     </div>

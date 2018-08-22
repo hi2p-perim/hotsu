@@ -23,7 +23,7 @@ bibtex = """
   year = 2018,
   volume = 37,
   number = 6,
-  pages = {370-381},
+  pages = {370--381},
 }"""
 
 +++
