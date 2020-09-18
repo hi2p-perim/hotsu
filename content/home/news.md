@@ -3,6 +3,9 @@
 
 {{< fa_ul >}}
 {{< fa_li >}}
+**Sep. 2020**: I will present a work at VMV 2020.
+{{< /fa_li >}}
+{{< fa_li >}}
 **Aug. 2018**: I have a paper conditionally accepted to SIGGRAPH Asia 2018!
 {{< /fa_li >}}
 {{< fa_li >}}

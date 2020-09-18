@@ -71,7 +71,7 @@
     <div id="news" class="row">
     	<div class="col-md-12">
 	    	<h2>News</h2>
-	    	{{ range first 1 (where $.Data.Pages "File.BaseFileName" "news") }}
+	    	{{ range first 1 (where $.Site.RegularPages "File.BaseFileName" "news") }}
 	    	{{ .Content }}
 	    	{{ end }}
     	</div>
@@ -82,7 +82,7 @@
     	<div class="col-md-12">
 	    	<h2>Publications</h2>
 	    	<ul class="media-list">
-	    		{{ range $index, $page := where .Data.Pages "Type" "publication" }}
+	    		{{ range $index, $page := where .Site.RegularPages "Type" "publication" }}
 	    			<li class="media">
 			    		<div class="media-left media-middle">
 			    			<img class="project-representative-image media-object img-rounded" src="{{ "/img/" | relURL }}{{ if .Params.tba }}tba.jpg{{ else }}{{ $page.File.BaseFileName }}/icon.jpg{{ end }}">
@@ -117,7 +117,7 @@
     <div id="thesis" class="row">
     	<div class="col-md-12">
 	    	<h2>Thesis</h2>
-	    	{{ range first 1 (where $.Data.Pages "File.BaseFileName" "thesis") }}
+	    	{{ range first 1 (where $.Site.RegularPages "File.BaseFileName" "thesis") }}
 	    	{{ .Content }}
 	    	{{ end }}
     	</div>
@@ -127,7 +127,7 @@
     <div id="news" class="row">
     	<div class="col-md-12">
 	    	<h2>Awards</h2>
-	    	{{ range first 1 (where $.Data.Pages "File.BaseFileName" "awards") }}
+	    	{{ range first 1 (where $.Site.RegularPages "File.BaseFileName" "awards") }}
 	    	{{ .Content }}
 	    	{{ end }}
     	</div>
@@ -137,7 +137,7 @@
     <div id="personal-projects" class="row">
     	<div class="col-md-12">
 	    	<h2>Personal Projects</h2>
-	    	{{ range first 1 (where $.Data.Pages "File.BaseFileName" "personal_projects") }}
+	    	{{ range first 1 (where $.Site.RegularPages "File.BaseFileName" "personal_projects") }}
 	    	{{ .Content }}
 	    	{{ end }}
     	</div>
