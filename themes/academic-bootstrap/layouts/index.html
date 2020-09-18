@@ -61,7 +61,7 @@
           <li><i class="fa-li fa fa-envelope"></i>{{ $.Site.Params.email_2 }}</li>
           {{ end }}
 	      </ul>
-	    	{{ range first 1 (where $.Data.Pages "File.BaseFileName" "bio") }}
+	    	{{ range first 1 (where $.Site.RegularPages "File.BaseFileName" "bio") }}
 	    	{{ .Content }}
 	    	{{ end }}
       </div>
