@@ -3,10 +3,10 @@ date = "2017-06-01"
 title = "Fusing State Spaces for Markov Chain Monte Carlo Rendering"
 authors = ["hisanari_otsu", "anton_kaplanyan", "johannes_hanika", "carsten_dachsbacher", "toshiya_hachisuka"]
 url_doi = "https://doi.org/0.1145/3072959.3073691"
-url_pdf = "/download/inverse.pdf"
+url_pdf = "download/inverse.pdf"
 pdf_filesize = "29.2 MB"
 url_code = "https://github.com/hi2p-perim/lightmetrica-v2/tree/master/plugin/renderer_inversemap"
-url_pptx = "/download/inverse.pptx"
+url_pptx = "download/inverse.pptx"
 pptx_filesize = "87.8 MB"
 code_is_coming_soon = false
 

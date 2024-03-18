@@ -3,10 +3,10 @@ date = "2018-04-04"
 title = "Reproducing Spectral Reflectances From Tristimulus Colours"
 authors = ["hisanari_otsu", "masafumi_yamamoto", "toshiya_hachisuka"]
 url_doi = "https://doi.org/10.1111/cgf.13332"
-url_pdf = "/download/rgb2spec.pdf"
+url_pdf = "download/rgb2spec.pdf"
 pdf_filesize = "28.5 MB"
-url_code = "/download/rgb2spec.zip"
-url_pptx = "/download/rgb2spec.pptx"
+url_code = "download/rgb2spec.zip"
+url_pptx = "download/rgb2spec.pptx"
 pptx_filesize = "21.5 MB"
 code_is_coming_soon = false
 
