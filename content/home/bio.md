@@ -12,4 +12,7 @@ Physically based rendering
 {{< fa_li >}}
 Light transport simulation
 {{< /fa_li >}}
+{{< fa_li >}}
+Markov chain Monte Carlo rendering
+{{< /fa_li >}}
 {{< /fa_ul >}}
