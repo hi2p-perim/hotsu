@@ -1,4 +1,4 @@
-baseurl     = "http://lightmetrica.org/h-otsu"
+baseurl     = "https://hi2p-perim.github.io/hotsu/"
 title       = "Hisanari Otsu"
 copyright   = "&copy; 2016 Hisanari Otsu"
 theme       = "academic-bootstrap"
