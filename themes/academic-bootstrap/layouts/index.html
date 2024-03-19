@@ -48,6 +48,9 @@
           <li><i class="fa-li fa fa-university"></i><a href="{{ $.Site.Params.organization_url_2 }}" target="_blank">{{ $.Site.Params.organization_2 }}</a></li>
           {{ end }}
           <li><i class="fa-li fa fa-envelope"></i>{{ $.Site.Params.email }}</li>
+          {{ if $.Site.Params.email_2 }}
+          <li><i class="fa-li fa fa-envelope"></i>{{ $.Site.Params.email_2 }}</li>
+          {{ end }}
           <li><i class="fa-li fa fa-external-link-square"></i>
             <a href="{{ $.Site.Params.googlescholar }}">Google Scholar</a> /
             <a href="{{ $.Site.Params.linkedin }}">Linkedin</a> /
