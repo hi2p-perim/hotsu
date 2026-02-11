@@ -1,7 +1,7 @@
 +++
 date = "2018-08-22"
 title = "Geometry-Aware Metropolis Light Transport"
-authors = ["hisanari_otsu", "johannes_hanika", "toshiya_hachisuka", "carsten_dachsbacher"]
+authors = ["Hisanari Otsu", "Johannes Hanika", "Toshiya Hachisuka", "Carsten Dachsbacher"]
 url_doi = "https://doi.org/10.1145/3272127.3275106"
 url_pdf = "download/geomlt.pdf"
 pdf_filesize = "23.9 MB"

@@ -1,0 +1,84 @@
+- id: ramlt
+  tba: false
+  date: "2024-03-16"
+  title: "Regional Adaptive Metropolis Light Transport"
+  authors: ["**Hisanari Otsu**", "Killian Herveau", "Johannes Hanika", "Derek Nowrouzezahrai", "Carsten Dachsbacher"]
+  publication_short: "arXiv:2402.08273"
+  url_doi: "https://doi.org/10.48550/arXiv.2402.08273"
+  url_pdf: ""
+  url_project: ""
+
+- id: autotune_mlt
+  tba: false
+  date: "2023-10-05"
+  title: "Out-of-the-loop Autotuning of Metropolis Light Transport with Reciprocal Probability Binning"
+  authors: ["Killian Herveau", "**Hisanari Otsu**", "Carsten Dachsbacher"]
+  publication_short: "Eurographics 2023 Short Paper"
+  url_doi: "https://doi.org/10.2312/egs.20231005"
+  url_pdf: "download/autotune_mlt.pdf"
+  url_project: ""
+
+- id: portal_mlt
+  tba: false
+  date: "2018-09-18"
+  title: "Portal-Based Path Perturbation for Metropolis Light Transport"
+  authors: ["**Hisanari Otsu**", "Johannes Hanika", "Carsten Dachsbacher"]
+  publication_short: "Vision, Modeling, and Visualization 2020"
+  url_doi: ""
+  url_pdf: "download/portal_mlt.pdf"
+  url_project: "project/portal_mlt/"
+
+- id: geomlt
+  tba: false
+  date: "2018-08-22"
+  title: "Geometry-Aware Metropolis Light Transport"
+  authors: ["**Hisanari Otsu**", "Johannes Hanika",  "Toshiya Hachisuka", "Carsten Dachsbacher"]
+  publication_short: "SIGGRAPH Asia 2018"
+  url_doi: "https://doi.org/10.1145/3272127.3275106"
+  url_pdf: "download/geomlt.pdf"
+  url_project: "project/geomlt/"
+
+- id: rgb2spec
+  date: "2018-02-21"
+  title: "Reproducing Spectral Reflectances From Tristimulus Colours"
+  authors: ["**Hisanari Otsu**", "Masafumi Yamamoto", "Toshiya Hachisuka"]
+  publication_short: "Computer Graphics Forum"
+  url_doi: "https://doi.org/10.1111/cgf.13332"
+  url_pdf: "download/rgb2spec.pdf"
+  url_project: "project/rgb2spec/"
+
+- id: blending
+  date: "2017-07-14"
+  title: "Supervised Learning of How to Blend Light Transport Simulations"
+  authors: ["**Hisanari Otsu**", "Shinichi Kinuwaki", "Toshiya Hachisuka"]
+  publication_short: "Proceedings of the MCQMC 2016"
+  url_doi: "http://doi.org/10.1007/978-3-319-91436-7_23"
+  url_pdf: "download/blending.pdf"
+  url_project: "project/blending/"
+
+- id: inverse
+  date: "2017-06-01"
+  title: "Fusing State Spaces for Markov Chain Monte Carlo Rendering"
+  authors: ["**Hisanari Otsu**", "Anton S. Kaplanyan", "Johannes Hanika", "Carsten Dachsbacher", "Toshiya Hachisuka"]
+  publication_short: "SIGGRAPH 2017"
+  url_doi: "https://doi.org/0.1145/3072959.3073691"
+  url_pdf: "download/inverse.pdf"
+  url_project: "project/inverse/"
+
+- id: ups-vcm_mcmc
+  date: "2016-12-01"
+  title: "Robust Light Transport Simulation via Metropolized Bidirectional Estimators"
+  authors: ["Martin Šik", "**Hisanari Otsu**", "Toshiya Hachisuka", "Jaroslav Křivánek"]
+  publication_short: "SIGGRAPH Asia 2016"
+  url_doi: "https://doi.org/10.1145/2980179.2982411"
+  url_pdf: "download/ups-vcm_mcmc.pdf"
+  url_project: "http://cgg.mff.cuni.cz/~sik/meb/index.html"
+
+- id: relt_relaxed
+  date: "2013-07-01"
+  title: "Replica Exchange Light Transport on Relaxed Distributions"
+  authors: ["**Hisanari Otsu**", "Yonghao Yue", "Qiming Hou", "Kei Iwasaki", "Yoshinori Dobashi", "Tomoyuki Nishita"]
+  publication_short: "SIGGRAPH 2013 Posters"
+  url_doi: "https://doi.org/10.1145/2503385.2503501"
+  url_pdf: "download/relt_relaxed.pdf"
+  url_project: ""

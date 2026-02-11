@@ -80,27 +80,27 @@
     	<div class="col-md-12">
 	    	<h2>Publications</h2>
 	    	<ul class="media-list">
-	    		{{ range $index, $page := where .Site.RegularPages "Type" "publication" }}
+          {{ range sort site.Data.publications "date" "desc" }}
 	    			<li class="media">
 			    		<div class="media-left media-middle">
-			    			<img class="project-representative-image media-object img-rounded" src="{{ "img/" | relURL }}{{ if .Params.tba }}tba.jpg{{ else }}{{ $page.File.BaseFileName }}/icon.jpg{{ end }}">
+			    			<img class="project-representative-image media-object img-rounded" src="{{ "img/" | relURL }}{{ if .tba }}tba.jpg{{ else }}{{ .id }}/icon.jpg{{ end }}">
 			    		</div>
 			    		<div class="media-body media-middle">
-			    			<h4>{{ $page.Title }}</h4>
+			    			<h4>{{ .title }}</h4>
 			    			<p>
-			    				{{ with .Params.authors }}
+                	{{ with .authors }}
 					        {{ delimit . ", " | markdownify }}
 					        {{ end }}
 			    			</p>
-			    			<p>{{ .Params.publication_short | markdownify }}</p>
+			    			<p>{{ .publication_short | markdownify }}</p>
 			    			<p>
-                  {{ with .Params.url_doi }}
+                  {{ with .url_doi }}
 			    				<a href="{{ . }}" target="_blank">[DOI]</a>
                   {{ end }}
-                  {{ with .Params.url_pdf }}
+                  {{ with .url_pdf }}
 			    				<a href="{{ . | relURL }}" target="_blank">[PDF]</a>
                   {{ end }}
-			    				{{ with .Params.url_project }}
+			    				{{ with .url_project }}
 			    				<a href="{{ . | relURL }}" target="_blank">[Project]</a>
 			    				{{ end }}
 			    			</p>

@@ -1,7 +1,7 @@
 +++
 date = "2018-08-22"
 title = "Portal-Based Path Perturbation for Metropolis Light Transport"
-authors = ["hisanari_otsu", "johannes_hanika", "carsten_dachsbacher"]
+authors = ["Hisanari Otsu", "Johannes Hanika", "Carsten Dachsbacher"]
 url_doi = ""
 url_pdf = "download/portal_mlt.pdf"
 pdf_filesize = "58.8 MB"

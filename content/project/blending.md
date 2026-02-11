@@ -1,7 +1,7 @@
 +++
 date = "2017-07-14"
 title = "Supervised Learning of How to Blend Light Transport Simulations"
-authors = ["hisanari_otsu", "shinichi_kinuwaki", "toshiya_hachisuka"]
+authors = ["Hisanari Otsu", "Shinichi Kinuwaki", "Toshiya Hachisuka"]
 url_doi = "http://doi.org/10.1007/978-3-319-91436-7_23"
 url_pdf = "download/blending.pdf"
 pdf_filesize = "18.3 MB"

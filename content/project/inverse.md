@@ -1,7 +1,7 @@
 +++
 date = "2017-06-01"
 title = "Fusing State Spaces for Markov Chain Monte Carlo Rendering"
-authors = ["hisanari_otsu", "anton_kaplanyan", "johannes_hanika", "carsten_dachsbacher", "toshiya_hachisuka"]
+authors = ["Hisanari Otsu", "Anton Kaplanyan", "Johannes Hanika", "Carsten Dachsbacher", "Toshiya Hachisuka"]
 url_doi = "https://doi.org/0.1145/3072959.3073691"
 url_pdf = "download/inverse.pdf"
 pdf_filesize = "29.2 MB"

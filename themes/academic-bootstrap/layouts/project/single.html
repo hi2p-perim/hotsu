@@ -21,16 +21,19 @@
       <div class="col-md-12">
         <h2>{{ .Title }}</h2>
         <ul class="list-inline">
-          {{ $author_pages := where $.Site.Pages "Type" "author" }}
           {{ range $author := .Params.authors }}
-          {{ range first 1 (where $author_pages "File.BaseFileName" $author) }}
+          {{ with index site.Data.authors $author }}
           <li>
-            {{ if .Params.personal_url }}
-            <a href="{{ .Params.personal_url }}" target="_blank">{{ .Params.name }}</a>
+            {{ with .me }}
+            <b>{{ $author }}</b>
+            {{ else with .personal_url }}
+            <a href="{{ . }}" target="_blank">{{ $author }}</a>
             {{ else }}
-            {{ .Params.name }}
+            {{ $author }}
             {{ end }}
           </li>
+          {{ else }}
+          <li>{{ $author }}</li>
           {{ end }}
           {{ end }}
         </ul>
