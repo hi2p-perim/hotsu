@@ -25,7 +25,7 @@
           {{ with index site.Data.authors $author }}
           <li>
             {{ with .me }}
-            <b>{{ $author }}</b>
+            <a href="{{ site.BaseURL }}" target="_blank"><b>{{ $author }}</b></a>
             {{ else with .personal_url }}
             <a href="{{ . }}" target="_blank">{{ $author }}</a>
             {{ else }}

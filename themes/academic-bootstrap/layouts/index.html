@@ -66,14 +66,18 @@
     </div>
     
     <!-- News -->
-    <!-- <div id="news" class="row">
+    {{ range first 1 (where $.Site.RegularPages "File.BaseFileName" "news") }}
+    {{ if .Params.show }}
+    <div id="news" class="row">
     	<div class="col-md-12">
 	    	<h2>News</h2>
-	    	{{ range first 1 (where $.Site.RegularPages "File.BaseFileName" "news") }}
+        <div class="border">
 	    	{{ .Content }}
-	    	{{ end }}
+        </div>
     	</div>
-    </div> -->
+    </div>
+    {{ end }}
+    {{ end }}
 
     <!-- Publications -->
     <div id="publications" class="row">
